@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--
+        Add Your Name and Project Title Here
+    -->
+    <title>Memphis Grizzlies Fan Site</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akshar&family=Allerta&family=Alumni+Sans+Inline+One&family=Rubik+Glitch&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="navbar"><img class="logo" src="images/GrizzLogo.png" alt="Memphis Grizzlies Logo"></li>
+            <li class="navbar"><a href="index.html">Home</a></li>
+            <li class="navbar"><a href="roster.html">Roster</a></li>
+            <li class="navbar"><a href="schedule.html">Schedule</a></li>
+            <li class="navbar"><a href="stats.html">Stats</a></li>
+            <li class="navbar"><a href="socialmedia.html">Social Media</a></li>
+        </ul>
+    </nav>
+
+    <div class="stats">
+        <h1>Memphis Grizzlies Regular Season Stats 2021-2022</h1>
+        <table id="myTable">
+            <tr>
+                <th class="names" onclick="sortTable(0)">Name<i class="fa-solid fa-arrow-down"></i></th>
+                <th onclick="sortTableNum(1)">MIN <i class="fa-solid fa-arrow-down"></i></th>
+                <th onclick="sortTableNum(2)">PTS <i class="fa-solid fa-arrow-down"></i></th>
+                <th onclick="sortTableNum(3)">FG% <i class="fa-solid fa-arrow-down"></i></th>
+                <th onclick="sortTableNum(4)">3P% <i class="fa-solid fa-arrow-down"></i></th>
+                <th onclick="sortTableNum(5)">FT% <i class="fa-solid fa-arrow-down"></i></th>
+                <th onclick="sortTableNum(6)">AST <i class="fa-solid fa-arrow-down"></i></th>
+                <th onclick="sortTableNum(7)">REB <i class="fa-solid fa-arrow-down"></i></th>
+                <th onclick="sortTableNum(8)">STL <i class="fa-solid fa-arrow-down"></i></th>
+                <th onclick="sortTableNum(9)">BLK <i class="fa-solid fa-arrow-down"></i></th>
+            </tr>
+            <tr class="player">
+                <td class="names">Steven Adams</td>
+                <td class="center">26.3</td>
+                <td class="center">6.9</td>
+                <td class="center">54.7</td>
+                <td class="center">0.0</td>
+                <td class="center">54.3</td>
+                <td class="center">3.4</td>
+                <td class="center">10.0</td>
+                <td class="center">0.9</td>
+                <td class="center">0.8</td>
+            </tr>
+            <tr class="player">
+                <td class="names">Santi Aldama</td>
+                <td class="center">11.3</td>
+                <td class="center">4.1</td>
+                <td class="center">40.2</td>
+                <td class="center">12.5</td>
+                <td class="center">62.5</td>
+                <td class="center">0.7</td>
+                <td class="center">2.7</td>
+                <td class="center">0.2</td>
+                <td class="center">0.3</td>
+            </tr>
+            <tr class="player">
+                <td class="names">Kyle Anderson</td>
+                <td class="center">21.5</td>
+                <td class="center">7.6</td>
+                <td class="center">44.6</td>
+                <td class="center">33.0</td>
+                <td class="center">63.8</td>
+                <td class="center">2.7</td>
+                <td class="center">5.3</td>
+                <td class="center">1.1</td>
+                <td class="center">0.7</td>
+            </tr>
+            <tr class="player">
+                <td class="names">Desmond Bane</td>
+                <td class="center">29.8</td>
+                <td class="center">18.2</td>
+                <td class="center">46.1</td>
+                <td class="center">43.6</td>
+                <td class="center">90.3</td>
+                <td class="center">2.7</td>
+                <td class="center">4.4</td>
+                <td class="center">1.2</td>
+                <td class="center">0.4</td>
+            </tr>
+            <tr class="player">
+                <td class="names">Dillon Brooks</td>
+                <td class="center">27.7</td>
+                <td class="center">18.4</td>
+                <td class="center">43.2</td>
+                <td class="center">30.9</td>
+                <td class="center">84.9</td>
+                <td class="center">2.8</td>
+                <td class="center">3.2</td>
+                <td class="center">1.1</td>
+                <td class="center">0.3</td>
+            </tr>
+            <tr class="player">
+                <td class="names">Brandon Clarke</td>
+                <td class="center">19.5</td>
+                <td class="center">10.4</td>
+                <td class="center">64.4</td>
+                <td class="center">22.7</td>
+                <td class="center">65.4</td>
+                <td class="center">1.3</td>
+                <td class="center">5.3</td>
+                <td class="center">0.6</td>
+                <td class="center">1.1</td>
+            </tr>
+            <tr class="player">
+                <td class="names">Jarrett Culver</td>
+                <td class="center">9.1</td>
+                <td class="center">3.5</td>
+                <td class="center">37.8</td>
+                <td class="center">25.5</td>
+                <td class="center">47.1</td>
+                <td class="center">0.9</td>
+                <td class="center">1.3</td>
+                <td class="center">0.5</td>
+                <td class="center">0.1</td>
+            </tr>
+            <tr class="player">
+                <td class="names">Jaren Jackson Jr.</td>
+                <td class="center">27.3</td>
+                <td class="center">16.3</td>
+                <td class="center">41.5</td>
+                <td class="center">31.9</td>
+                <td class="center">82.3</td>
+                <td class="center">1.1</td>
+                <td class="center">5.8</td>
+                <td class="center">0.9</td>
+                <td class="center">2.3</td>
+            </tr>
+            <tr class="player">
+                <td class="names">Tyus Jones</td>
+                <td class="center">21.2</td>
+                <td class="center">8.7</td>
+                <td class="center">45.1</td>
+                <td class="center">39.0</td>
+                <td class="center">81.8</td>
+                <td class="center">4.4</td>
+                <td class="center">2.4</td>
+                <td class="center">0.9</td>
+                <td class="center">0.0</td>
+            </tr>
+            <tr class="player">
+                <td class="names">John Konchar</td>
+                <td class="center">17.9</td>
+                <td class="center">4.8</td>
+                <td class="center">51.5</td>
+                <td class="center">41.3</td>
+                <td class="center">55.1</td>
+                <td class="center">1.5</td>
+                <td class="center">4.6</td>
+                <td class="center">0.6</td>
+                <td class="center">0.3</td>
+            </tr>
+            <tr class="player">
+                <td class="names">De'Anthony Melton</td>
+                <td class="center">22.7</td>
+                <td class="center">10.8</td>
+                <td class="center">40.4</td>
+                <td class="center">37.4</td>
+                <td class="center">75.0</td>
+                <td class="center">2.7</td>
+                <td class="center">4.5</td>
+                <td class="center">1.4</td>
+                <td class="center">0.5</td>
+            </tr>
+            <tr class="player">
+                <td class="names">Ja Morant</td>
+                <td class="center">33.1</td>
+                <td class="center">27.4</td>
+                <td class="center">49.3</td>
+                <td class="center">34.4</td>
+                <td class="center">76.1</td>
+                <td class="center">6.7</td>
+                <td class="center">5.7</td>
+                <td class="center">1.2</td>
+                <td class="center">0.4</td>
+            </tr>
+            <tr class="player">
+                <td class="names">Yves Pons</td>
+                <td class="center">5.9</td>
+                <td class="center">1.1</td>
+                <td class="center">31.3</td>
+                <td class="center">33.3</td>
+                <td class="center">0.0</td>
+                <td class="center">0.1</td>
+                <td class="center">1.0</td>
+                <td class="center">0.1</td>
+                <td class="center">0.3</td>
+            </tr>
+            <tr class="player">
+                <td class="names">Killian Tillie</td>
+                <td class="center">12.8</td>
+                <td class="center">3.3</td>
+                <td class="center">33.9</td>
+                <td class="center">31.4</td>
+                <td class="center">62.5</td>
+                <td class="center">0.6</td>
+                <td class="center">1.7</td>
+                <td class="center">0.6</td>
+                <td class="center">0.4</td>
+            </tr>
+            <tr class="player">
+                <td class="names">Xavier Tillman</td>
+                <td class="center">13.2</td>
+                <td class="center">4.8</td>
+                <td class="center">45.4</td>
+                <td class="center">20.4</td>
+                <td class="center">64.8</td>
+                <td class="center">1.2</td>
+                <td class="center">3.0</td>
+                <td class="center">0.9</td>
+                <td class="center">0.3</td>
+            </tr>
+            <tr class="player">
+                <td class="names">Zaire Williams</td>
+                <td class="center">21.7</td>
+                <td class="center">8.1</td>
+                <td class="center">45.0</td>
+                <td class="center">31.4</td>
+                <td class="center">78.2</td>
+                <td class="center">1.0</td>
+                <td class="center">2.1</td>
+                <td class="center">0.6</td>
+                <td class="center">0.2</td>
+            </tr>
+        </table>
+
+
+    </div>
+    <footer>
+        <div class="madeBy">
+            <p>This website was made by:</p>
+            <p>Eli Cohen</p>
+        </div>
+        <div class="contact">
+            <p>Email: cohenelj@iu.edu</p>
+            <p>Phone: 901-626-2606</p>
+        </div>
+        <div class="social">
+            <p>My Social Media</p>
+            <div>
+                <a href="https://twitter.com/pandapig15" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/el1c0hen/" class="icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        invisibleArrow();
+
+        function invisibleArrow() {
+            var arrow = document.querySelectorAll(".fa-arrow-down");
+
+            for (let i = 0; i < arrow.length; i++) {
+                arrow[i].style.display = "none";
+            }
+        }
+
+        function sortTableNum(n) {
+            var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+            table = document.getElementById("myTable");
+            switching = true;
+
+            var arrow = document.querySelectorAll(".fa-arrow-down");
+            
+            for (let i = 0; i < arrow.length; i++) {
+                arrow[i].style.display = "none";
+            }
+
+            //Set the sorting direction to ascending:
+            dir = "asc";
+            /*Make a loop that will continue until
+            no switching has been done:*/
+            while (switching) {
+                //start by saying: no switching is done:
+                switching = false;
+                rows = table.rows;
+                /*Loop through all table rows (except the
+                first, which contains table headers):*/
+                for (i = 1; i < (rows.length - 1); i++) {
+                    //start by saying there should be no switching:
+                    shouldSwitch = false;
+                    /*Get the two elements you want to compare,
+                    one from current row and one from the next:*/
+                    x = rows[i].getElementsByTagName("td")[n];
+                    y = rows[i + 1].getElementsByTagName("td")[n];
+                    /*check if the two rows should switch place,
+                    based on the direction, asc or desc:*/
+                    if (dir == "asc") {
+                        arrow[n].style.display = "block"
+                        arrow[n].style.transform = 'rotate(180deg)'
+                        if (Number(x.innerHTML) > Number(y.innerHTML)) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    } else if (dir == "desc") {
+                        arrow[n].style.display = "block"
+                        arrow[n].style.transform = 'rotate(0deg)'
+                        if (Number(x.innerHTML) < Number(y.innerHTML)) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+                }
+                if (shouldSwitch) {
+                    /*If a switch has been marked, make the switch
+                    and mark that a switch has been done:*/
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                    //Each time a switch is done, increase this count by 1:
+                    switchcount++;
+                } else {
+                    /*If no switching has been done AND the direction is "asc",
+                    set the direction to "desc" and run the while loop again.*/
+                    if (switchcount == 0 && dir == "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+            }
+        }
+
+        function sortTable(n) {
+            var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+            table = document.getElementById("myTable");
+            switching = true;
+
+            var arrow = document.querySelectorAll(".fa-arrow-down");
+            
+            for (let i = 0; i < arrow.length; i++) {
+                arrow[i].style.display = "none";
+            }
+
+            //Set the sorting direction to ascending:
+            dir = "asc";
+            /*Make a loop that will continue until
+            no switching has been done:*/
+            while (switching) {
+                //start by saying: no switching is done:
+                switching = false;
+                rows = table.rows;
+                /*Loop through all table rows (except the
+                first, which contains table headers):*/
+                for (i = 1; i < (rows.length - 1); i++) {
+                    //start by saying there should be no switching:
+                    shouldSwitch = false;
+                    /*Get the two elements you want to compare,
+                    one from current row and one from the next:*/
+                    x = rows[i].getElementsByTagName("TD")[n];
+                    y = rows[i + 1].getElementsByTagName("TD")[n];
+                    /*check if the two rows should switch place,
+                    based on the direction, asc or desc:*/
+                    if (dir == "asc") {
+                        arrow[n].style.display = "block"
+                        arrow[n].style.transform = 'rotate(180deg)'
+                        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                            //if so, mark as a switch and break the loop:
+                            shouldSwitch = true;
+                            break;
+                        }
+                    } else if (dir == "desc") {
+                        arrow[n].style.display = "block"
+                        arrow[n].style.transform = 'rotate(0deg)'
+                        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                            //if so, mark as a switch and break the loop:
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+                }
+                if (shouldSwitch) {
+                    /*If a switch has been marked, make the switch
+                    and mark that a switch has been done:*/
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                    //Each time a switch is done, increase this count by 1:
+                    switchcount++;
+                } else {
+                    /*If no switching has been done AND the direction is "asc",
+                    set the direction to "desc" and run the while loop again.*/
+                    if (switchcount == 0 && dir == "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

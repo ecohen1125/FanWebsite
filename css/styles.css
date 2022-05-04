@@ -1,0 +1,635 @@
+/* natural box model */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* UTILITIES */
+
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* no break */
+.nobr {
+  white-space: nowrap;
+}
+
+/* START STYLES HERE */
+
+/* Navigation */
+nav {
+  background-color: #799CC2;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.logo {
+  padding-top: 13px;
+  height: 60px;
+}
+.navbar {
+  font-size: 48px;
+  font-family: 'Rubik Glitch', cursive;
+}
+
+a:link,
+a:visited {
+  color: #EEEAE7;
+}
+
+a:hover {
+  color: #0C203D;
+}
+
+button {
+  background-color: #F2B705;
+  border: none;
+  border-radius: 30px;
+}
+/* End of Navigation */
+
+/* Start of Footer */
+footer {
+  background-color: #799CC2;
+  display: flex;
+  justify-content: space-around;
+  padding: 2.0em 0;
+  font-family: 'Alumni Sans Inline One', cursive;
+}
+footer p {
+  font-size: 26px;
+  color: #EEEAE7;
+  margin: 0;
+}
+.fa-twitter, .fa-instagram {
+  height: 30px;
+}
+/* End of Footer */
+
+/* Home Page */
+.w3-display-left {
+  cursor: pointer;
+}
+.w3-display-right {
+  cursor: pointer;
+}
+.buttons {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  top: 400px;
+}
+/* img gallery */
+.pic {
+  height: 500px;
+  margin: 0 auto;
+}
+/* End of img gallery */
+.home {
+  padding-top: 3.0em;
+  padding-bottom: 5.0em;
+  background-color: #f2b705bc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-image: url(https://www.nba.com/grizzlies/sites/grizzlies/files/confetti-ex-white-bg.jpg);
+  color: #0C203D;
+  background-blend-mode: multiply;
+  font-family: 'Akshar', sans-serif;
+}
+.home h1, .home h3, .socialmediaheader {
+  text-align: center;
+}
+.home h1, .socialmediaheader {
+  font-size: 50px;
+  margin: 0;
+  padding-top: 10px;
+}
+.home h3 {
+  margin: 0;
+  padding-top: 3px;
+}
+.subtitle {
+  padding-bottom: 1.0em;
+}
+.home h2 {
+  text-align: center;
+}
+.home table {
+  margin: 0 auto;
+  padding: 1.0em;
+  font-size: larger;
+}
+.firstTable {
+  text-align: right;
+}
+.centerTable {
+  text-align: center;
+  padding: 8px;
+}
+.lastTable {
+  text-align: left;
+}
+.home article {
+  width: 700px;
+  margin: 0 auto;
+  padding-bottom: 1.0em;
+}
+.games {
+  display: flex;
+  justify-content: space-around;
+  /* width: 1200px; */
+  flex-wrap: wrap;
+}
+section {
+  width: 500px;
+}
+.games h3 {
+  font-size: 24px;
+}
+.games h4 {
+  font-size: 20px;
+  text-align: center;
+}
+.home .picCaption {
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  padding-top: 5px;
+}
+/* Roster */
+.roster {
+  padding-top: 3.0em;
+  padding-bottom: 5.0em;
+  background-color: #f2b705bc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-image: url(https://www.nba.com/grizzlies/sites/grizzlies/files/confetti-ex-white-bg.jpg);
+  color: #0C203D;
+  background-blend-mode: multiply;
+  font-family: 'Akshar', sans-serif;
+}
+.roster h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+.roster table {
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.roster table td {
+  padding-right: 20px;
+}
+.player {
+  font-size: 24px;
+}
+.roster th {
+  font-size: 40px;
+  cursor: pointer;
+  text-align: left;
+  padding: 0 20px;
+  color: #EEEAE7;
+}
+.roster th:hover {
+  /* background-color: #5abfbf9f; */
+  color: #0C203D;
+}
+.roster td:nth-child(n) {  
+  padding-left: 20px;
+}
+.center {
+  text-align: center;
+}
+.roster .names {
+  width: 210px;
+}
+/* Schedule */
+.schedule {
+  padding-top: 3.0em;
+  padding-bottom: 5.0em;
+  background-color: #f2b705bc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-image: url(https://www.nba.com/grizzlies/sites/grizzlies/files/confetti-ex-white-bg.jpg);
+  color: #0C203D;
+  background-blend-mode: multiply;
+  font-family: 'Akshar', sans-serif;
+}
+.schedule h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+.schedule .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.schedule .game {
+  height: 100px;
+  width: 200px;
+  padding: 15px;
+  margin: 5px;
+}
+.schedule .layout {
+  display: flex;
+}
+.schedule .heading {
+  display: flex;
+  color: #EEEAE7;
+  justify-content: space-around;
+}
+.schedule .clickable {
+  cursor: pointer;
+}
+.schedule .header {
+  font-size: 30px;
+}
+.schedule .middleHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.schedule .leftHeader {
+  padding-right: 20px;
+}
+.schedule .rightHeader {
+  padding-left: 20px;
+}
+.clickable:hover {
+  color: #0C203D;
+}
+#homeGame {
+  background-color: #F2F2F2;
+  height: 140px;
+  width: 200px;
+  padding: 15px;
+  margin: 5px;
+}
+#away {
+  background-color: #7595BF;
+  height: 140px;
+  width: 200px;
+  padding: 15px;
+  margin: 5px;
+}
+.schedule .style {
+  text-decoration: underline;
+}
+/* Stats */
+.stats {
+  padding-top: 3.0em;
+  padding-bottom: 5.0em;
+  background-color: #f2b705bc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-image: url(https://www.nba.com/grizzlies/sites/grizzlies/files/confetti-ex-white-bg.jpg);
+  color: #0C203D;
+  background-blend-mode: multiply;
+  font-family: 'Akshar', sans-serif;
+}
+.stats h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+.stats table {
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+.stats table td {
+  padding-right: 20px;
+}
+.stats th {
+  font-size: 40px;
+  cursor: pointer;
+  text-align: left;
+  padding: 0 20px;
+  color: #EEEAE7;
+}
+.stats td:nth-child(n) {  
+  padding-left: 20px;
+}
+.stats th:hover {
+  /* background-color: #5abfbf9f; */
+  color: #0C203D;
+}
+.fa-arrow-down {
+  width: 25px;
+  height: 40px;
+}
+/* Social Media */
+.socialmedia {
+  padding-top: 3.0em;
+  background-color: #f2b705bc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-image: url(https://www.nba.com/grizzlies/sites/grizzlies/files/confetti-ex-white-bg.jpg);
+  color: #0C203D;
+  background-blend-mode: multiply;
+  font-family: 'Akshar', sans-serif;
+  padding-bottom: 20px;
+}
+.tweets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.twitter-tweet {
+  padding-bottom: 2.0em;
+}
+.socialmediaheader {
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+.socialmedia .space {
+  padding-bottom: 3.0em;
+}
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .navbar {
+    font-size: 18px;
+  }
+  .pic {
+    height: 200px;
+    margin: 0 auto;
+  }
+  .player {
+    font-size: 18px;
+    padding: 0;
+  }
+  .roster th {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+  .roster table td {
+    padding: 0 15px;
+  }
+  .names {
+    width: 150px;
+  }
+  .roster td:nth-child(n) {
+    padding-left: 15px;
+  }
+  .schedule .header {
+    font-size: 20px;
+  }
+  .stats th {
+    font-size: 18px;
+    padding: 0;
+  }
+  .stats table td {
+    padding: 0 15px;
+  }
+  .stats td:nth-child(n) {
+    padding-left: 0;
+  }
+  .stats h1 { 
+    font-size: 24px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar {
+    font-size: 24px;
+  }
+  .pic {
+    height: 300px;
+    margin: 0 auto;
+  }
+  .player {
+    font-size: 20px;
+    padding: 0;
+  }
+  .roster th {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+  .roster table td {
+    padding: 0 15px;
+  }
+  .names {
+    width: 210px;
+  }
+  .roster td:nth-child(n) {
+    padding-left: 15px;
+  }
+  .schedule .header {
+    font-size: 30px;
+  }
+  .stats th {
+    font-size: 24px;
+    padding: 0;
+  }
+  .stats table td {
+    padding: 0 20px;
+  }
+  .stats td:nth-child(n) {
+    padding-left: 0;
+  }
+  .stats h1 { 
+    font-size: 30px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar {
+    font-size: 32px;
+  }
+  .pic {
+    height: 400px;
+    margin: 0 auto;
+  }
+  .player {
+    font-size: 20px;
+    padding: 0;
+  }
+  .roster th {
+    font-size: 32px;
+    padding: 0 15px;
+  }
+  .roster table td {
+    padding: 0 15px;
+  }
+  .names {
+    width: 210px;
+  }
+  .roster td:nth-child(n) {
+    padding-left: 15px;
+  } 
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .navbar {
+    font-size: 48px;
+  }
+  .pic {
+    height: 500px;
+    margin: 0 auto;
+  }
+  .player {
+    font-size: 24px;
+    padding: 0;
+  }
+  .roster th {
+    font-size: 40px;
+    padding: 0 15px;
+  }
+  .roster table td {
+    padding: 0 15px;
+  }
+  .names {
+    width: 210px;
+  }
+  .roster td:nth-child(n) {
+    padding-left: 15px;
+  }
+  .schedule .header {
+    font-size: 30px;
+  }
+  .stats th {
+    font-size: 40px;
+    padding: 0 20px 0 0;
+  }
+  .stats table td {
+    padding: 0 20px;
+    font-size: 32px;
+  }
+  .stats td:nth-child(n) {
+    padding-left: 0;
+  }
+  .stats h1 { 
+    font-size: 40px;
+  }
+}
+
+
+/* MEDIA QUERIES FROM LARGEST TO SMALLEST */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .navbar {
+    font-size: 12px;
+  }
+  footer p {
+    font-size: 16px;
+  }
+  .pic {
+    height: 200px;
+    margin: 0 auto;
+  }
+  .player {
+    font-size: 12px;
+    padding: 0;
+  }
+  .roster th {
+    font-size: 20px;
+    padding: 0;
+  }
+  .roster table td {
+    padding: 0;
+  }
+  .names {
+    width: 100px;
+  }
+  .roster td:nth-child(n) {
+    padding-left: 0;
+  }
+  .roster h1 {
+    font-size: 40px;
+  }
+  .schedule .header {
+    font-size: 20px;
+  }
+  .schedule h1 {
+    font-size: 40px;
+  }
+  .stats th {
+    font-size: 18px;
+    padding: 0;
+  }
+  .stats table td {
+    padding: 0 15px;
+  }
+  .stats td:nth-child(n) {
+    padding-left: 0;
+  }
+  .stats h1 { 
+    font-size: 24px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+/* @media (max-width: 767.98px) {
+  .navbar {
+    font-size: 20px;
+  }
+} */
+
+/* Medium devices (tablets, less than 992px) */
+/* @media (max-width: 991.98px) {
+  .navbar {
+    font-size: 28px;
+  }
+} */
+
+/* Large devices (desktops, less than 1200px) */
+/* @media (max-width: 1199.98px) {
+  .navbar {
+    font-size: 32px;
+  }
+} */
+
+/* Extra large devices (large desktops)
+No media query since the extra-large breakpoint has no upper bound on its width */

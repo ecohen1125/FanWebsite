@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--
+        Add Your Name and Project Title Here
+    -->
+    <title>Memphis Grizzlies Fan Site</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akshar&family=Allerta&family=Alumni+Sans+Inline+One&family=Rubik+Glitch&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="navbar"><img class="logo" src="images/GrizzLogo.png" alt="Memphis Grizzlies Logo"></li>
+            <li class="navbar"><a href="index.html">Home</a></li>
+            <li class="navbar"><a href="roster.html">Roster</a></li>
+            <li class="navbar"><a href="schedule.html">Schedule</a></li>
+            <li class="navbar"><a href="stats.html">Stats</a></li>
+            <li class="navbar"><a href="socialmedia.html">Social Media</a></li>
+        </ul>
+    </nav>
+
+    <div class="schedule">
+        <h1>Memphis Grizzlies Schedule</h1>
+        <div class="heading">
+            <p style="visibility:hidden;" class="header">Record: 56-26</p>
+            <div class="middleHeader">
+                <p class="clickable header leftHeader style" onclick="myFunction1()">Home Games</p>
+                <p class="clickable header rightHeader style" onclick="myFunction2()">Away Games</p>
+            </div>
+            <p class="header">Record: 56-26</p>
+        </div>
+
+        <div class="flex">
+            <div id="homeGame">
+                <p>Wednesday, October 20</p>
+                <p>vs Clevland Cavaliers</p>
+                <p>132-121</p>
+            </div>
+            <div id="away">
+                <p>Saturday, October 23</p>
+                <p>at Los Angeles Clippers</p>
+                <p>120-114</p>
+            </div>
+            <div id="away">
+                <p>Sunday, October 24</p>
+                <p>at Los Angeles Lakers</p>
+                <p>118-121</p>
+            </div>
+            <div id="away">
+                <p>Wednesday, October 27</p>
+                <p>at Portland Trailblazers</p>
+                <p>96-116</p>
+            </div>
+            <div id="away">
+                <p>Thursday, October 28</p>
+                <p>at Golden State Warriors</p>
+                <p>104-101</p>
+            </div>
+            <div id="homeGame">
+                <p>Saturday, October 30</p>
+                <p>vs Miami Heat</p>
+                <p>103-129</p>
+            </div>
+            <div id="homeGame">
+                <p>Monday, November 1</p>
+                <p>vs Denver Nuggets</p>
+                <p>106-97</p>
+            </div>
+            <div id="homeGame">
+                <p>Wednesday, November 3</p>
+                <p>vs Denver Nuggets</p>
+                <p>108-106</p>
+            </div>
+            <div id="away">
+                <p>Friday, November 5</p>
+                <p>vs Washington Wizards</p>
+                <p>87-115</p>
+            </div>
+            <div id="homeGame">
+                <p>Monday, November 8</p>
+                <p>vs Minnesota Timberwolves</p>
+                <p>125-118</p>
+            </div>
+            <div id="homeGame">
+                <p>Wednesday, November 10</p>
+                <p>vs Denver Nuggets</p>
+                <p>108-118</p>
+            </div>
+            <div id="homeGame">
+                <p>Fridat, November 12</p>
+                <p>vs Pheonix Suns</p>
+                <p>94-119</p>
+            </div>
+            <div id="away">
+                <p>Saturday, November 13</p>
+                <p>vs New Orleans Pelicans</p>
+                <p>101-112</p>
+            </div>
+            <div id="homeGame">
+                <p>Monday, November 15</p>
+                <p>vs Houston Rockets</p>
+                <p>136-102</p>
+            </div>
+            <div id="homeGame">
+                <p>Thursday, November 18</p>
+                <p>vs Los Angeles Clippers</p>
+                <p>120-108</p>
+            </div>
+            <div id="away">
+                <p>Saturday, November 20</p>
+                <p>vs Minnesota Timberwolves</p>
+                <p>95-138</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="madeBy">
+            <p>This website was made by:</p>
+            <p>Eli Cohen</p>
+        </div>
+        <div class="contact">
+            <p>Email: cohenelj@iu.edu</p>
+            <p>Phone: 901-626-2606</p>
+        </div>
+        <div class="social">
+            <p>My Social Media</p>
+            <div>
+                <a href="https://twitter.com/pandapig15" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/el1c0hen/" class="icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    myFunction1();
+    myFunction2();
+
+    function myFunction1() {
+        var awayGames = document.querySelectorAll("#away");
+        var homeGames = document.querySelectorAll("#homeGame");
+        //var losses = document.querySelectorAll(".loss");
+
+        for (let i = 0; i < awayGames.length; i++) {
+            if (awayGames[i].style.display == "block") {
+                awayGames[i].style.display = "none";
+            } else {
+                awayGames[i].style.display = "block";
+            }
+        }
+        for (let i = 0; i < homeGames.length; i++) {
+            if (homeGames[i].style.display == "none") {
+                homeGames[i].style.display = "block";
+            }
+        }
+        // for (let i = 0; i < wins.length; i++) {
+        //     if (wins[i].style.display == "none") {
+        //         wins[i].style.display = "block";
+        //     }
+        // }
+        // for (let i = 0; i < losses.length; i++) {
+        //     if (losses[i].style.display == "none") {
+        //         losses[i].style.display = "block";
+        //     }
+        // }
+    }
+
+    function myFunction2() {
+        var homeGames = document.querySelectorAll("#homeGame");
+        var awayGames = document.querySelectorAll("#away");
+        //var wins = document.querySelectorAll(".win");
+        //var losses = document.querySelectorAll(".loss");
+
+        for (let i = 0; i < homeGames.length; i++) {
+            if (homeGames[i].style.display == "block") {
+                homeGames[i].style.display = "none";
+            } else {
+                homeGames[i].style.display = "block";
+            }
+        }
+        for (let i = 0; i < awayGames.length; i++) {
+            if (awayGames[i].style.display == "none") {
+                awayGames[i].style.display = "block";
+            }
+        }
+        // for (let i = 0; i < wins.length; i++) {
+        //     if (wins[i].style.display == "none") {
+        //         wins[i].style.display = "block";
+        //     }
+        // }
+        // for (let i = 0; i < losses.length; i++) {
+        //     if (losses[i].style.display == "none") {
+        //         losses[i].style.display = "block";
+        //     }
+        // }
+    }
+
+    /*function myFunction3() {
+        var awayGames = document.querySelectorAll("#away");
+        var homeGames = document.querySelectorAll("#homeGame");
+        var losses = document.querySelectorAll(".loss");
+
+        for (let i = 0; i < losses.length; i++) {
+            if (losses[i].style.display == "block") {
+                losses[i].style.display = "none";
+            } else {
+                losses[i].style.display = "block";
+            }
+        }
+        for (let i = 0; i < awayGames.length; i++) {
+            if (awayGames[i].style.display == "none") {
+                awayGames[i].style.display = "block";
+            }
+        }
+        for (let i = 0; i < homeGames.length; i++) {
+            if (homeGames[i].style.display == "none") {
+                homeGames[i].style.display = "block";
+            }
+        }
+    }
+
+    function myFunction4() {
+        var awayGames = document.querySelectorAll("#away");
+        var wins = document.querySelectorAll(".win");
+        var homeGames = document.querySelectorAll("#homeGame");
+
+        for (let i = 0; i < wins.length; i++) {
+            if (wins[i].style.display == "block") {
+                wins[i].style.display = "none";
+            } else {
+                wins[i].style.display = "block";
+            }
+        }
+        for (let i = 0; i < awayGames.length; i++) {
+            if (awayGames[i].style.display == "none") {
+                awayGames[i].style.display = "block";
+            }
+        }
+        for (let i = 0; i < homeGames.length; i++) {
+            if (homeGames[i].style.display == "none") {
+                homeGames[i].style.display = "block";
+            }
+        }
+    }*/
+</script>
+
+</html>
