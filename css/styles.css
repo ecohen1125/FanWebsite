@@ -531,7 +531,7 @@ No media query for `xs` since this is the default */
     padding: 0 15px;
   }
   .names {
-    width: 210px;
+    width: 220px;
   }
   .roster td:nth-child(n) {
     padding-left: 15px;
@@ -609,27 +609,3 @@ No media query for `xs` since this is the default */
     font-size: 24px;
   }
 }
-
-/* Small devices (landscape phones, less than 768px) */
-/* @media (max-width: 767.98px) {
-  .navbar {
-    font-size: 20px;
-  }
-} */
-
-/* Medium devices (tablets, less than 992px) */
-/* @media (max-width: 991.98px) {
-  .navbar {
-    font-size: 28px;
-  }
-} */
-
-/* Large devices (desktops, less than 1200px) */
-/* @media (max-width: 1199.98px) {
-  .navbar {
-    font-size: 32px;
-  }
-} */
-
-/* Extra large devices (large desktops)
-No media query since the extra-large breakpoint has no upper bound on its width */
